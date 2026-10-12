@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { Navbar } from './Navbar';
-import { MobileNav } from './MobileNav';
 import { Footer } from './Footer';
 
 export const MainLayout = () => {
@@ -15,11 +14,10 @@ export const MainLayout = () => {
   return (
     <div className="min-h-screen flex flex-col bg-[#FBF9F5] text-slate-800">
       <Navbar />
-      <main className="flex-1 w-full pb-16 lg:pb-0">
+      <main className="flex-1 w-full">
         <Outlet />
       </main>
       <Footer />
-      <MobileNav />
     </div>
   );
 };

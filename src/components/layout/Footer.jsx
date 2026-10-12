@@ -4,7 +4,7 @@ import { BrandLogo } from '../common/BrandLogo';
 
 export const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-slate-400 pt-16 pb-24 lg:pb-16 border-t border-slate-800 mt-20">
+    <footer className="bg-slate-900 text-slate-400 py-16 border-t border-slate-800 mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Value Proposition Badges */}
