@@ -16,6 +16,7 @@ import { OrdersPage } from '../pages/OrdersPage';
 import { OrderDetailPage } from '../pages/OrderDetailPage';
 import { FavoritesPage } from '../pages/FavoritesPage';
 import { ProfilePage } from '../pages/ProfilePage';
+import { ContactPage } from '../pages/ContactPage';
 import { LoginPage } from '../pages/LoginPage';
 import { RegisterPage } from '../pages/RegisterPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
@@ -33,6 +34,7 @@ export const AppRoutes = () => {
         <Route path="restaurants" element={<RestaurantsPage />} />
         <Route path="restaurants/:restaurantId" element={<RestaurantDetailPage />} />
         <Route path="food/:foodId" element={<FoodDetailPage />} />
+        <Route path="contact" element={<ContactPage />} />
 
         {/* Cart & Checkout */}
         <Route path="cart" element={<CartPage />} />

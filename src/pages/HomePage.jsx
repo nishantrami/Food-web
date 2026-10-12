@@ -278,48 +278,130 @@ export const HomePage = () => {
       <Testimonials />
 
       {/* 9. Mobile App Experience Banner */}
-      <section className="bg-slate-900 rounded-3xl sm:rounded-4xl p-8 sm:p-12 relative overflow-hidden text-white shadow-xl border border-slate-800">
-        <div className="absolute right-0 top-0 -mr-16 -mt-16 w-80 h-80 rounded-full bg-orange-500/10 blur-3xl pointer-events-none" />
+      {/* 9. Mobile App Experience Banner */}
+      <section className="bg-gradient-to-br from-white via-orange-50/25 to-amber-50/40 rounded-3xl sm:rounded-4xl p-8 sm:p-12 relative overflow-hidden text-slate-900 shadow-card border border-orange-200/80">
+        <div className="absolute right-0 top-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-gradient-to-br from-orange-400/10 to-amber-400/10 blur-3xl pointer-events-none" />
+        <div className="absolute left-0 bottom-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-rose-400/5 blur-3xl pointer-events-none" />
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
-          <div className="lg:col-span-8 space-y-4">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/15 border border-orange-400/30 text-amber-300 text-xs font-bold uppercase tracking-wider">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+          <div className="lg:col-span-7 space-y-5">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100 text-orange-700 text-xs font-black uppercase tracking-wider shadow-2xs">
               <i className="fa-solid fa-mobile-screen-button text-xs" aria-hidden="true" />
               <span>Everywhere You Go</span>
             </span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight leading-snug">
-              Order Faster With FoodVerse
+            
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-slate-900">
+              Order Faster With{' '}
+              <span className="bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
+                FoodVerse
+              </span>
             </h2>
-            <p className="text-slate-300 text-sm sm:text-base max-w-xl font-normal">
-              Save your favorite dishes, track delivery drivers in real-time, and get exclusive promo coupons right from your pocket.
+
+            <p className="text-slate-600 text-sm sm:text-base max-w-xl font-normal leading-relaxed">
+              Save your favorite dishes, track delivery drivers in real-time, and get exclusive promo coupons right from your pocket. Experience chef-crafted food delivered to your door in minutes.
             </p>
-            <div className="flex flex-wrap gap-3 pt-2">
+
+            <div className="flex flex-wrap items-center gap-3 pt-2">
               <Link to="/explore">
                 <Button size="lg" icon="fa-solid fa-utensils" className="rounded-2xl bg-orange-500 hover:bg-orange-600 text-white shadow-md">
                   Explore Food Catalog
                 </Button>
               </Link>
               <Link to="/restaurants">
-                <Button variant="secondary" size="lg" icon="fa-solid fa-arrow-right" iconPosition="right" className="rounded-2xl bg-slate-800 hover:bg-slate-700 text-white border-slate-700">
-                  Find Kitchens
-                </Button>
+                <button
+                  type="button"
+                  className="inline-flex items-center justify-center font-black rounded-2xl transition-all duration-200 text-sm sm:text-base px-6 py-3.5 gap-2.5 bg-white hover:bg-orange-50 text-slate-800 hover:text-orange-600 border border-slate-200 hover:border-orange-300 shadow-xs cursor-pointer active:scale-[0.98]"
+                >
+                  <span>Find Kitchens</span>
+                  <i className="fa-solid fa-arrow-right text-xs" aria-hidden="true" />
+                </button>
               </Link>
+            </div>
+
+            {/* Benefit Checkmarks */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-3 border-t border-orange-100">
+              <div className="flex items-center gap-2 text-xs font-bold text-slate-700">
+                <i className="fa-solid fa-circle-check text-emerald-500 text-sm" aria-hidden="true" />
+                <span>Live GPS Tracking</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs font-bold text-slate-700">
+                <i className="fa-solid fa-circle-check text-emerald-500 text-sm" aria-hidden="true" />
+                <span>Average 28 Min Delivery</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs font-bold text-slate-700">
+                <i className="fa-solid fa-circle-check text-emerald-500 text-sm" aria-hidden="true" />
+                <span>No Contact Delivery</span>
+              </div>
             </div>
           </div>
 
-          <div className="lg:col-span-4 flex justify-center">
-            <div className="w-48 sm:w-56 aspect-[9/16] bg-slate-950 rounded-3xl border-4 border-slate-800 p-3 shadow-2xl relative flex flex-col justify-between">
-              <div className="w-16 h-4 bg-slate-800 rounded-full mx-auto" />
-              <div className="text-center space-y-2 py-4">
-                <div className="w-12 h-12 rounded-xl bg-orange-500 text-white flex items-center justify-center mx-auto text-2xl shadow-sm">
-                  <i className="fa-solid fa-pizza-slice" aria-hidden="true" />
+          {/* Smartphone Mockup with Light & Modern Aesthetic */}
+          <div className="lg:col-span-5 flex justify-center relative">
+            {/* Floating Review Badge */}
+            <div className="absolute -top-3 -left-2 sm:left-4 z-20 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-2">
+              <div className="w-7 h-7 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center text-xs font-black">
+                <i className="fa-solid fa-star" aria-hidden="true" />
+              </div>
+              <div>
+                <span className="block text-[10px] font-bold text-slate-400 uppercase">Top Rated App</span>
+                <span className="text-xs font-black text-slate-800">4.9 ★ Rating</span>
+              </div>
+            </div>
+
+            {/* Modern Phone Frame */}
+            <div className="w-56 sm:w-64 aspect-[9/18] bg-slate-900 rounded-[2.8rem] p-3 shadow-2xl border-4 border-slate-700/80 ring-8 ring-orange-100/60 relative flex flex-col justify-between">
+              {/* Dynamic Island Notch */}
+              <div className="w-20 h-4 bg-slate-950 rounded-full mx-auto relative z-20 flex items-center justify-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-slate-800" />
+                <div className="w-1.5 h-1.5 rounded-full bg-emerald-500/80" />
+              </div>
+
+              {/* Phone Screen Canvas (Clean White Aesthetic) */}
+              <div className="bg-gradient-to-b from-orange-50 via-white to-white rounded-[2.2rem] p-3.5 flex-1 mt-2 flex flex-col justify-between border border-slate-100 overflow-hidden text-slate-900 shadow-inner">
+                {/* App Screen Header */}
+                <div className="flex items-center justify-between pb-2 border-b border-slate-100">
+                  <div className="flex items-center gap-1.5">
+                    <div className="w-6 h-6 rounded-lg bg-orange-500 text-white flex items-center justify-center text-xs shadow-xs">
+                      <i className="fa-solid fa-fire" aria-hidden="true" />
+                    </div>
+                    <span className="text-xs font-black text-slate-900">FoodVerse</span>
+                  </div>
+                  <span className="text-[10px] font-extrabold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">
+                    Open Now
+                  </span>
                 </div>
-                <p className="text-xs font-bold text-white">Order in 3 Taps</p>
-                <p className="text-[10px] text-slate-400 font-medium">Doorstep delivery under 30 mins</p>
+
+                {/* Main Screen Content */}
+                <div className="text-center space-y-2 py-3 my-auto">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-orange-500 to-amber-500 text-white flex items-center justify-center mx-auto text-2xl shadow-md">
+                    <i className="fa-solid fa-pizza-slice" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-black text-slate-900">Order in 3 Taps</p>
+                    <p className="text-[10px] text-slate-500 font-semibold mt-0.5">Doorstep delivery under 30 mins</p>
+                  </div>
+
+                  {/* Sample Dish Card Inside Phone */}
+                  <div className="bg-slate-50 border border-slate-200/80 rounded-xl p-2 flex items-center gap-2 text-left mt-2">
+                    <div className="w-9 h-9 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center shrink-0">
+                      <i className="fa-solid fa-burger text-sm" aria-hidden="true" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-[11px] font-black text-slate-800 truncate">Smoked Cheeseburger</p>
+                      <p className="text-[10px] text-orange-600 font-bold">₹219 • 20 mins</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bottom Order CTA */}
+                <div className="w-full bg-gradient-to-r from-orange-500 to-amber-500 text-white text-xs font-black py-2.5 rounded-xl text-center shadow-md flex items-center justify-center gap-1.5">
+                  <i className="fa-solid fa-bolt text-[10px]" aria-hidden="true" />
+                  <span>Order Now • 20% OFF</span>
+                </div>
               </div>
-              <div className="w-full bg-orange-500 text-white text-[11px] font-bold py-2 rounded-lg text-center shadow-xs">
-                FoodVerse Fresh
-              </div>
+
+              {/* Home indicator bar */}
+              <div className="w-24 h-1 bg-slate-600 rounded-full mx-auto mt-2" />
             </div>
           </div>
         </div>

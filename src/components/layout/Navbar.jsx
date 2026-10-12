@@ -28,7 +28,8 @@ export const Navbar = () => {
     { name: 'Home', path: '/', icon: 'fa-solid fa-house' },
     { name: 'Explore', path: '/explore', icon: 'fa-solid fa-compass' },
     { name: 'Restaurants', path: '/restaurants', icon: 'fa-solid fa-store' },
-    { name: 'Orders', path: '/orders', icon: 'fa-solid fa-bag-shopping' }
+    { name: 'Orders', path: '/orders', icon: 'fa-solid fa-bag-shopping' },
+    { name: 'Contact', path: '/contact', icon: 'fa-solid fa-headset' }
   ];
 
   return (

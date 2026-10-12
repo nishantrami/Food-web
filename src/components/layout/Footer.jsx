@@ -93,9 +93,9 @@ export const Footer = () => {
             </h4>
             <ul className="space-y-2.5 text-sm font-medium">
               <li><Link to="/explore" className="hover:text-amber-400 transition-colors">About FoodVerse</Link></li>
-              <li><Link to="/explore" className="hover:text-amber-400 transition-colors">Careers</Link></li>
+              <li><Link to="/contact" className="hover:text-amber-400 transition-colors">Contact Us</Link></li>
               <li><Link to="/restaurants" className="hover:text-amber-400 transition-colors">Partner With Us</Link></li>
-              <li><Link to="/explore" className="hover:text-amber-400 transition-colors">Press & News</Link></li>
+              <li><Link to="/explore" className="hover:text-amber-400 transition-colors">Careers & News</Link></li>
             </ul>
           </div>
 
@@ -117,11 +117,11 @@ export const Footer = () => {
               Support
             </h4>
             <ul className="space-y-2.5 text-sm font-medium">
-              <li><a href="#help" className="hover:text-amber-400 transition-colors">Help Center</a></li>
+              <li><Link to="/contact" className="hover:text-amber-400 transition-colors">Contact & Support</Link></li>
               <li><a href="#privacy" className="hover:text-amber-400 transition-colors">Privacy Policy</a></li>
               <li><a href="#terms" className="hover:text-amber-400 transition-colors">Terms of Service</a></li>
               <li><Link to="/orders" className="hover:text-amber-400 transition-colors">Track Order</Link></li>
-              <li><a href="#contact" className="hover:text-amber-400 transition-colors">Customer Care</a></li>
+              <li><Link to="/contact" className="hover:text-amber-400 transition-colors">24/7 Helpline</Link></li>
             </ul>
           </div>
         </div>
